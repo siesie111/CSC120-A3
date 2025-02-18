@@ -15,11 +15,7 @@ class Conversation implements Chatbot {
     cannedResponse.add("Mmm-hm.");
     cannedResponse.add("Wooo that's interesting!");
     cannedResponse.add("Happy to hear that.");
-<<<<<<< HEAD
     cannedResponse.add("Tell me more!");
-=======
-    cannedResponse.add("Yes I understand.");
->>>>>>> c3076aca1b7d9aa3df265fec0d43ac21f9ac57fe
     cannedResponse.add("Absolutely.");
   }
   
@@ -37,11 +33,7 @@ class Conversation implements Chatbot {
    * Constructor 
    */
   Conversation() {
-<<<<<<< HEAD
     this.transcript = new ArrayList<>();
-=======
-
->>>>>>> c3076aca1b7d9aa3df265fec0d43ac21f9ac57fe
   }
 
   /**
@@ -51,25 +43,16 @@ class Conversation implements Chatbot {
   
     // ask the user to input round number and store it 
     System.out.println("How many rounds?");
-<<<<<<< HEAD
     Scanner input = new Scanner(System.in);
     int round = input.nextInt();
     input.nextLine();
-=======
-    Scanner input = new Scanner (System.in);
-    int round = input.nextInt();
->>>>>>> c3076aca1b7d9aa3df265fec0d43ac21f9ac57fe
 
     // print the greeting and add it to the transcript
     System.out.println("Hi there!  What's on your mind?");
     transcript.add("Hi there!  What's on your mind?");
 
     // chat with the user according to the round number, and store the conversation to the transcript
-<<<<<<< HEAD
     for (int i = 0; i < round; i++){
-=======
-    for (int i = 0; i <= round; i++){
->>>>>>> c3076aca1b7d9aa3df265fec0d43ac21f9ac57fe
       // get the user input using the input object created earlier and add it to the transcript
       String userInput = input.nextLine();
       transcript.add(userInput);
@@ -82,12 +65,9 @@ class Conversation implements Chatbot {
     // end the conversation and add it to the transcript
     System.out.println("See ya!");
     transcript.add("See ya!");
-<<<<<<< HEAD
 
     // close the open input after the conversation
     input.close();
-=======
->>>>>>> c3076aca1b7d9aa3df265fec0d43ac21f9ac57fe
     
   }
 
@@ -112,10 +92,7 @@ class Conversation implements Chatbot {
     // split the user input sentence into strings using split function
     String[] elements = userInput.split(" ");
     boolean mirror = false;
-<<<<<<< HEAD
     
-=======
->>>>>>> c3076aca1b7d9aa3df265fec0d43ac21f9ac57fe
     // loop the string list to find the corresponding index
     for (int i = 0; i < elements.length; i++){
       // if the user input contains mirrored words, return the mirrored response by replacing the word
@@ -135,11 +112,7 @@ class Conversation implements Chatbot {
     Random random = new Random();
     int num = random.nextInt(cannedResponse.size());
     String result = cannedResponse.get(num);
-<<<<<<< HEAD
     return result; 
-=======
-    return result;
->>>>>>> c3076aca1b7d9aa3df265fec0d43ac21f9ac57fe
     }
   }
 
@@ -156,3 +129,5 @@ class Conversation implements Chatbot {
 
   }
 }
+
+
